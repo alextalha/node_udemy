@@ -1,0 +1,89 @@
+
+===============================================================================
+EXPRESS - um framework nodeJs para aplicações WEB
+
+EJS =  Uma Linguagem de modelagem para criação de paginas HTML
+
+NODEMON  - um utilitario que reinicia automaticamente o servidor NodeJS quando 
+houver qualuqer alteração em nossos scripts 
+
+NPM - um gerenciador de pacotes Javascript 
+
+================================================================================
+
+INICIANDO COM NPM
+
+
+#criando um package.js , arvore de dependencias e notas do projeto
+
+npm init 
+
+
+================================================================================
+
+#instala e adiciona o modulo no projeto corrente . exemplo 
+npm install express --save
+
+
+# chama mas não executa
+var express = require('express');
+
+
+#chama e executa
+var express = require('express')();
+
+
+
+SESSAO 4 - 16
+=============================================================================
+
+var msg = require('./mod_teste')();
+
+/* EXECUTAR UMA FUNCAO */
+
+
+
+MODULARIZANDO NOSSA APLICACO .
+
+SEPARAR O ARQUIVOS DE SERVIDOR 
+SEPARAR OS ARQUIVOS DE ROTA
+
+
+> udemy-curso
+    > config
+        server.js
+        
+
+================================================================================
+
+https://udemy-curso-alextalha.c9users.io:8081/noticia
+        
+================================================================================
+
+O que é o Consign
+Auxiliar de design pattern
+
+automatizador para instanciação das rotas no node
+e ele faz também o autload de 
+views, config , controllers
+
+
+npm install consign --save
+
+
+consign().include('app/routes').then('config/dbConnection').into(app)
+
+# .include('app/routes')
+/*qual direitorio iremos usar para ele rodar as rotas  / scan / pegar todos os modules.exports */
+
+# .include('config/dbConnection.js');
+/* quando terminar de carregar os módulos carregue tambem o dbConnection js , lembrar de colocar a extensão  */
+
+
+# .into(app)
+/* os includes achados adicionamos para a variavel app */
+
+
+
+
+

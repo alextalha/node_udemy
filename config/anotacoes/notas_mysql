@@ -1,0 +1,29 @@
+mysql-ctl start
+
+alextalha
+c9
+
+
+mysql-ctl cli
+
+CREATE USER 'udemy_usuario'@'%' IDENTIFIED BY 'udemy_usuario_12345';
+GRANT ALL PRIVILEGES ON *.* TO 'udemy_usuario'@'%' WITH GRANT OPTION;
+
+
+    $servername = getenv('IP');
+    $username = getenv('C9_USER');
+    $password = "";
+    $database = "c9";
+    $dbport = 3306;
+    
+https://docs.c9.io/docs/setup-a-database
+
+
+mysql> create table noticias (
+    -> id_noticia int not null primary key auto_increment,
+    -> titulo varchar(100),
+    -> noticia text,
+    -> data_criacao timestamp default current_timestamp);
+Query OK, 0 rows affected (0.01 sec);
+
+insert into noticias (titulo,noticia)values('titulo_noticias','conteudo_noticia');

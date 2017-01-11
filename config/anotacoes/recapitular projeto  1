@@ -1,0 +1,28 @@
+# Recapitulando 
+
+Entendimento do NodeJs
+
+Implementação do EJS
+
+Nodemon 
+
+instalação do Mysql
+
+padronizando a a treta 
+
+curso_node
+    app
+        routes
+        views
+            admin
+            home
+            noticias
+        config
+            dbConnection.js
+            server.js
+        node_modules
+        app.js
+        mod_teste.js
+        noticias.js
+        package.json
+        

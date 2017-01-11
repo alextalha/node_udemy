@@ -1,0 +1,3 @@
+
+
+remoção da configuração de banco da rota . 
